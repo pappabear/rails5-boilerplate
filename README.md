@@ -1,4 +1,4 @@
-# Ruby on Rails Tutorial sample application
+# Rails 5 Boilerplate
 
 This is the reference implementation of the sample application for the 4th edition of [*Ruby on Rails Tutorial: Learn Web Development with Rails*](http://www.railstutorial.org/) by [Michael Hartl](http://www.michaelhartl.com/).
 
@@ -8,54 +8,28 @@ All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/) is av
 
 ## Getting started
 
-To get started with the app, clone the repo and then install the needed gems:
+If you want to put this is a docker container:
 
 ```
-$ cd ~/tmp
-$ git clone https://bitbucket.org/railstutorial/sample_app_4th_ed.git sample_app
-$ cd sample_app
-$ bundle install --without production
+$ docker-compose build
+$ docker-compose up (or down depending)
 ```
 
-Next, migrate the database:
+If you want to run this locally:
 
 ```
 $ rails db:migrate
 ```
 
-Finally, run the test suite to verify that everything is working correctly:
+Run the test suite to verify that everything is working correctly:
 
 ```
 $ rails test
 ```
 
-If the test suite passes, you'll be ready to run the app in a local server:
+Run the app in a local server:
 
 ```
 $ rails server
 ```
 
-On Cloud9, this command should be
-
-```
-$ rails server -b $IP -p $PORT
-```
-
-instead.
-
-To check out the code for a particular chapter, use
-
-```
-$ git checkout chapter-branch-name
-```
-
-where you can find the branch name using
-
-```
-$ git branch -a
-```
-
-A branch called `remotes/orgin/foo-bar` can be checked out using `git checkout foo-bar`.
-
-For more information, see the
-[*Ruby on Rails Tutorial* book](http://www.railstutorial.org/book).
