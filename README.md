@@ -1,19 +1,29 @@
 # Rails 5 Boilerplate
 
-This is the reference implementation of the sample application for the 4th edition of [*Ruby on Rails Tutorial: Learn Web Development with Rails*](http://www.railstutorial.org/) by [Michael Hartl](http://www.michaelhartl.com/).
+This is the dockerized reference implementation of the sample application for the 4th edition of [*Ruby on Rails Tutorial: Learn Web Development with Rails*](http://www.railstutorial.org/) by [Michael Hartl](http://www.michaelhartl.com/).
 
 ## License
 
 All source code in the [Ruby on Rails Tutorial](http://railstutorial.org/) is available jointly under the MIT License and the Beerware License. See [LICENSE.md](LICENSE.md) for details.
 
-## Getting started
+## Running in a Docker container
 
-If you want to put this is a docker container:
+Build the containers from the project images:
 
 ```
 $ docker-compose build
+```
+
+Start the container:
+
+```
 $ docker-compose up (or down depending)
 ```
+
+The container will launch a script named _machine_start.rb_ that will perform the database migrations, seed the database, and launch the Puma server.
+
+ 
+## Running the app on localhost
 
 If you want to run this locally:
 
