@@ -17,10 +17,16 @@ $ docker-compose build
 Start the container:
 
 ```
-$ docker-compose up (or down depending)
+$ docker-compose up 
 ```
 
 The container will launch a script named _machine_start.rb_ that will perform the database migrations, seed the database, and launch the Puma server.
+
+Shut down the container:
+
+```
+$ docker-compose down
+```
 
  
 ## Running the app on localhost
